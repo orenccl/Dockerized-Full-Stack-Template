@@ -6,11 +6,11 @@ apiVersion: v1
 kind: Pod
 metadata:
   annotations:
-    bind-mount-options: /home/test/Dockerized-Full-Stack-Templete:z
+    bind-mount-options: /home/test/Dockerized-Full-Stack-Template:z
   creationTimestamp: "2023-09-22T05:54:54Z"
   labels:
-    app: Vidly
-  name: Vidly
+    app: Dockerized-Full-Stack-Template
+  name: Dockerized-Full-Stack-Template
 spec:
   containers:
   - args:
@@ -59,9 +59,9 @@ spec:
       claimName: vidly
   - name: backend
     hostPath:
-      path: /home/test/Dockerized-Full-Stack-Templete/backend
+      path: /home/test/Dockerized-Full-Stack-Template/backend
       type: Directory
   - name: frontend
     hostPath:
-      path: /home/test/Dockerized-Full-Stack-Templete/frontend
+      path: /home/test/Dockerized-Full-Stack-Template/frontend
       type: Directory
