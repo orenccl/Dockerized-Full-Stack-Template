@@ -106,7 +106,8 @@ sudo podman kube play podman-pod.prod.yml
 ```
 
 ## Final result
-![backend](https://github.com/orenccl/Dockerized-Full-Stack-Template/assets/16741926/f7567c18-681a-4f63-b664-fc30ad8cb536)
+![backend](https://github.com/orenccl/Dockerized-Full-Stack-Template/assets/16741926/f3c3ca60-fedb-4a6b-9c8c-7034ef7a05c9)
+
 ![frontend](https://github.com/orenccl/Dockerized-Full-Stack-Template/assets/16741926/16ed177f-d776-4f35-8aff-a3637bd4e676)
 
 ## Development and Production image size compare
