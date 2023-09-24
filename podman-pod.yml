@@ -24,8 +24,7 @@ spec:
     - mountPath: /data/db
       name: vidly-pvc
   - args:
-    - npm
-    - start
+    - ./docker-entrypoint.sh
     env:
     - name: DB_URL
       value: mongodb://db/vidly
