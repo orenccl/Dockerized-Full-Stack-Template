@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  frontend:
+    image: localhost/frontend:latest
+    command: npm test
+
+  backend:
+    image: localhost/backend:latest
+    environment:
+      DB_URL: mongodb://db/vidly
+    command: npm test
+
+  db:
+    image: mongo:4.0-xenial
+    volumes:
+      - vidly:/data/db
+
+volumes:
+  vidly:
